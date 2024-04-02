@@ -8,13 +8,41 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         
         <style>
-        
+            .alert {
+                height: 100px;
+                width: auto;
+                border: 2px solid black;
+                margin: 5px auto;
+                text-align: center;
+                background-color:lightpink;
+            }
+
+            #byline {
+                color: lightgoldenrodyellow;
+                width: auto;
+                background-image: https://github.com/coil-kt/coil/issues/540#issue-708042607("paper.gif");
+                background-color: #cccccc;
+            }
+
+            h1 { 
+                border: 9px dotted skyblue; 
+                font-family: cursive;
+                backdrop-filter: blur();
+                background-color: silver;}
+
+
+
             p {
-                color: maroon;
+                color: #A9A9A9;
                 font-size: 16px;
                 font-family: 'Open Sans', serif;
                 width: 50%;
             }
+
+            p id="p1"> { 
+                color: red;
+            }
+
             #quote {
                 color: magenta;
                 font-style: italic;
@@ -24,8 +52,8 @@
             #bargraph {
                 border: 1px solid gray;
                 padding-left: 10px;
-                padding-bottom: 10px;
-                width: 25%;
+                padding-bottom: 25px;
+                width: 50%;
             }
             .bar_label {
                 color: red;
@@ -37,27 +65,52 @@
                 border: 1px solid red;
             }
             #longer {
+                width: 200px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
                 
             }
             #long {
+                width: 100px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red; }
+
+
+            .book { 
+                border: 2px dotted greenyellow;
                 
             }
 
+            .info {
+                color: skyblue; }
+
         </style>
+
     </head>
     
     <body>
 
-        <h1>A little bit about me!</h1>
+        <!-- Messing with CSS  -->
+        <div class="alert">
+        <h3> Breaking news: I'm still tired!</h3>
+        <p id="byline">Reporting by JNL 221</p>
+        </div>
+
+        <h1 class="alert">I am exhausted today!!</h1>
         
         <h2>My intro</h2>
         <!-- Include: a brief intro to yourself -- where you're from, what you like to do for fun, what you're studying, and who your community or family is. -->
         <!-- Tags to use: <p>, <strong>, <i> -->
+            <p1>My name is <strong>Arwen Parmelee</strong>, and I am from <i>New Jersey</i></p>
         
 
         <h2>My handles</h2>
         <!-- Include: at least two handles for your social media accounts -->
         <!-- Tags to use: <p>, <a> -->
+            <p>This is <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ffatcatbaking%2F/" target="_blank">Instagram dot com </a>.</p>
+            <p>This is <a href="https://www.linkedin.com/in/arwen-parmelee-369562264/" target="_blank">Linkedin dot com</a>.</p>
 
     
         <h2> ~ Challenge: Why is my text maroon? ~</h2>
@@ -66,38 +119,57 @@
 
 
         <h2>My favorite meme</h2>
-        <!-- Include: "large_wink.png" as an image -->
+        <!-- Include: "large_wink.png" as an image --> <img src="large_wink.png" alt="an image of Kathryn Hahn winking in an exaggerated manner" height="300px" width="400px">
         <!-- Tags to use: <img> -->
-        <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. -->
+        <!-- Hint! Use 'reference_sheet.html', which you downloaded with this file, to remember how to include an image. --> 
 
     
         <h2>Why I'm a great student</h2>
-        <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->
+        <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->    <li>I <strong> always </strong> submit assignment on time</li>
+                <li>I come to class <strong> prepared </strong></li>
+                <li>I respect my professors</li>
+                <li>I <strong> participate </strong> in class <strong>  </strong></li>
+            </ul>
+    
         <!-- Tags to use: <ul>, <li>, <strong> -->
         
     
         <h2>Top 3 most famous people from my hometown</h2>
-        <!-- Include: an ordered list -->
+        <!-- Include: an ordered list --> <ol>
+                <li>Jason Patric</li>
+                <li>Lawrence Taylor</li>
+                <li> <a href="https://www.famousfix.com/list/people-from-upper-saddle-river-new-jersey" target="_blank">Kristine Johnson</a></li>
+            </ol>
+           
         <!-- Tags to use: <ol>, <li>, <a> -->
 
 
         <h2> ~ Challenge: Read my poetry ~</h2>
-        <!-- Challenge! Use the internet to figure out what a <br> tag is. Write a short poem about your college experience so far. -->
+        <!-- Challenge! Use the internet to figure out what a <br> tag is. Write a short poem about your college experience so far. --> <p1>In letters Greek, I found my kin,<br> A sisterhood where bonds begin.<br> With double majors, I tread strong,<br> In learning's dance, I belong.<br></p>
         <!-- Tags to use: <p> tags for your lines of poetry, and at least two <br> tags -->
     
 
         <h2>This is one of my favorite quotes</h2>
-        <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
+        <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag --> 
+            <h3>Divergent, Veronica Roth.</h3>
+            <p><i>“We believe in ordinary acts of bravery, in the courage that drives one person to stand up for another.”</i></p> 
         <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
 
 
         <h2>These are more of my favorite books</h2>
-        <!-- Include: an unordered list of at least three books, list items should have a border -->
+        <!-- Include: an unordered list of at least three books, list items should have a border --> 
+            <ul>
+                <li class="book"><i>The Great Gatspy</i>- F. Scott Fitzgerald</li>
+                <li class="book"><i>Where the Sidewalk Ends</i>- Shel Silverstein</li>
+                <li class="book"><i>The Scarlet Letter</i>- Nathaniel Hawthorne</li>
+                <li class="book"><i>1984</i>- George Orwell</li>
+            </ul>
         <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
         
 
         <h2>Here's how I normally spend my weekend</h2>
-        <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) -->
+        <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) --> <iframe title="My Weekend Plans!" aria-label="Pie Chart" id="datawrapper-chart-ZPFWB" src="https://datawrapper.dwcdn.net/ZPFWB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="590" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
         <!-- Tags to use: <iframe> -->
 
 
@@ -106,12 +178,13 @@
 
         <div id="bargraph">
             <h4>Length of bars</h4>
-            <p class="bar_label">Longest</p>
-            <div id="longest"></div>
-            <p class="bar_label">Longer</p>
-            <div id="longer"></div>
             <p class="bar_label">Long</p>
             <div id="long"></div>
+            <p class="bar_label">Longer</p>
+            <div id="longer"></div>
+            <p class="bar_label">Longest</p>
+            <div id="longest"></div>
+            
         </div>
      
     </body>
