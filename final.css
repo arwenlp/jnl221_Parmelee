@@ -1,35 +1,35 @@
 /*This is the CSS page for our final template.*/
 
-.footer p { /* This is how you add styles for only the p text within the footer. */
-	background-color: #cccccc;
+footer p { /* This is how you add styles for only the p text within the footer. */
+	background-color: gray;
 	text-align: center;
 	font-size: 20px;
 	margin-bottom: 0;
 }
-.header {
+header {
 	height: auto;
-	font-weight: bold;
-	font-size: 50px;
-	text-align: center;
-	font-family: 'Georgia', serif;
-	background-color:honeydew;
-	type="text/css">
-		
-p { font-family:'Times New Roman', serif;
-			font-size: 20px }
+ 	font-family: "Noto Sans", sans-serif;
+ 	background-color: gray;
+ 	color: white;
 }
+		
+p { font-family:"Times New Roman", serif;
+			font-size: 20px }
+
 h4 {
 	font-style: italic;
 	font-size: 40px;
-	font-family: 'Georgia', serif;
+/*	font-family: "Georgia", serif;*/
 }
 h3 {
 	font-size: 30px;
 }
 
-img { float:right; 
+img { 
+	float:right; 
 	margin-left: 5%;
-	margin-right: 5%  }
+	margin-right: 5%  
+}
 
 
 /*Don't worry about this section yet*/
@@ -42,8 +42,13 @@ img { float:right;
  	margin-bottom: 30px;
  	margin-top: 30px;
  }
+ img { float:none; }
+
  iframe {
  	min-width: 90%;
  	margin-right: 10px;
  }
+.footer p {
+	background-color: skyblue;
+}
 }
